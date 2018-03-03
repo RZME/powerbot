@@ -34,7 +34,10 @@ public class RandomEvents extends PollingScript<ClientContext> {
 		if (!threshold.contains(this)) {
 			threshold.add(this);
 		}
-		
+	if(ctx.widgets.component(218, 20).borderThickness() != 0) { // if the telegrab spell is selected click somewhere in the magebook to deselect it
+            ctx.input.click(665,350,true);
+            Condition.wait(() -> ctx.widgets.component(218, 20).borderThickness() == 0);
+        }
 		 if(ctx.inventory.selectedItemIndex() >= 0){
 			ctx.inventory.selectedItem().click();
 		}
