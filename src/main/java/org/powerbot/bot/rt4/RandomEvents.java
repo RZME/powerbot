@@ -34,10 +34,10 @@ public class RandomEvents extends PollingScript<ClientContext> {
 		if (!threshold.contains(this)) {
 			threshold.add(this);
 		}
-	if(ctx.magic.spell()!=Spell.Nil){ // if any spell is selected cancel it to dismiss the random event
- 	ctx.menu.click(menuCommand -> menuCommand.action.equals("Cancel"));
+	 if(ctx.magic.spell()!= Magic.Spell.NIL){
+     	ctx.input.click(ctx.widgets.widget(320).component(Random.nextInt(1,24)).component(0).centerPoint(),true);
             Condition.wait(() -> ctx.magic.spell()== Magic.Spell.NIL);
-}
+        }
 		 if(ctx.inventory.selectedItemIndex() >= 0){
 			ctx.inventory.selectedItem().click();
 		}
