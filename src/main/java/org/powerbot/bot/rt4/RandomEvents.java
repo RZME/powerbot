@@ -34,8 +34,9 @@ public class RandomEvents extends PollingScript<ClientContext> {
 		if (!threshold.contains(this)) {
 			threshold.add(this);
 		}
-	 if(ctx.magic.spell()!= Magic.Spell.NIL){
-     	ctx.input.click(ctx.widgets.widget(320).component(Random.nextInt(1,24)).component(0).centerPoint(),true);
+	   if(ctx.magic.spell()!= Magic.Spell.NIL){
+            ctx.game.tab(Game.Tab.MAGIC);
+           
             Condition.wait(() -> ctx.magic.spell()== Magic.Spell.NIL);
         }
 		 if(ctx.inventory.selectedItemIndex() >= 0){
