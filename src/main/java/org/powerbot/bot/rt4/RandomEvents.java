@@ -34,11 +34,20 @@ public class RandomEvents extends PollingScript<ClientContext> {
 		if (!threshold.contains(this)) {
 			threshold.add(this);
 		}
-	   if(ctx.magic.spell()!= Magic.Spell.NIL){
-            ctx.game.tab(Game.Tab.MAGIC);
-           
-            Condition.wait(() -> ctx.magic.spell()== Magic.Spell.NIL);
-        }
+	        if(ctx.magic.spell()!= Magic.Spell.NIL){
+	        	if(!ctx.game.tab(Game.Tab.MAGIC)) {
+		       		ctx.game.tab(Game.Tab.MAGIC);
+		   	} else {
+	                	ctx.game.tab(Game.Tab.INVENTORY);
+		   	}
+			      
+	           	Condition.wait(new Condition.Check() {
+				@Override
+				public boolean poll() {
+			    		return ctx.magic.spell()== Magic.Spell.NIL;
+				}
+		    	},200,10);
+		}
 		 if(ctx.inventory.selectedItemIndex() >= 0){
 			ctx.inventory.selectedItem().click();
 		}
