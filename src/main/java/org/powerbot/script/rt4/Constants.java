@@ -23,11 +23,11 @@ public final class Constants {
 	public static final int BANK_PLACEHOLDERS = 38;
 	public static final int BANK_DEPOSIT_INVENTORY = 42;
 	public static final int BANK_DEPOSIT_EQUIPMENT = 44;
-	public static final int BANK_QUANTITY_ONE = 27;
-	public static final int BANK_QUANTITY_FIVE = 29;
-	public static final int BANK_QUANTITY_TEN = 31;
-	public static final int BANK_QUANTITY_X = 33;
-	public static final int BANK_QUANTITY_ALL = 35;
+	public static final int BANK_QUANTITY_ONE = 29;
+	public static final int BANK_QUANTITY_FIVE = 31;
+	public static final int BANK_QUANTITY_TEN = 33;
+	public static final int BANK_QUANTITY_X = 35;
+	public static final int BANK_QUANTITY_ALL = 37;
 	public static final int BANK_QUANTITY = 1666;
 	public static final int BANK_X_VALUE = 304;
 	public static final int BANK_TABS = 867;
