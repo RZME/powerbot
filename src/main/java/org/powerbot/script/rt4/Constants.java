@@ -14,12 +14,12 @@ public final class Constants {
 	public static final int GAME_LOGGED = 30;
 
 	public static final int BANK_WIDGET = 12;
-	public static final int BANK_ITEMS = 12;
-	public static final int BANK_SCROLLBAR = 13;
+	public static final int BANK_ITEMS = 13;
+	public static final int BANK_SCROLLBAR = 14;
 	public static final int BANK_MASTER = 3;
 	public static final int BANK_CLOSE = 11;
-	public static final int BANK_ITEM = 21;
-	public static final int BANK_NOTE = 23;
+	public static final int BANK_ITEM = 22;
+	public static final int BANK_NOTE = 24;
 	public static final int BANK_PLACEHOLDERS = 37;
 	public static final int BANK_DEPOSIT_INVENTORY = 41;
 	public static final int BANK_DEPOSIT_EQUIPMENT = 43;
