@@ -18,8 +18,8 @@ public final class Constants {
 	public static final int BANK_SCROLLBAR = 14;
 	public static final int BANK_MASTER = 3;
 	public static final int BANK_CLOSE = 11;
-	public static final int BANK_ITEM = 22;
-	public static final int BANK_NOTE = 24;
+	public static final int BANK_ITEM = 23;
+	public static final int BANK_NOTE = 25;
 	public static final int BANK_PLACEHOLDERS = 38;
 	public static final int BANK_DEPOSIT_INVENTORY = 42;
 	public static final int BANK_DEPOSIT_EQUIPMENT = 44;
